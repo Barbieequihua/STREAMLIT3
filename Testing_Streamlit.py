@@ -3,19 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #Dashboard's main title
-st.title("Sales Analysis Data Dashboard")
+    st.title("Sales Analysis Data Dashboard")
 
-#Creating an upload section for the file either excel or csv
-uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx"])
-
-#Checking if the file is uploaded
-if uploaded_file is not None:
-    #detects csv or excel and transforms it as a dataframe
-    if uploaded_file is not None:
-        if uploaded_file.name.endswith(".csv"):
-            df = pd.read_csv(uploaded_file)
-        else:
-            df = pd.read_excel(uploaded_file)
+    df = pd.read_excel('sellers.xlsx)
 
     #Create a data table that is filtered by region
     st.subheader('By Region Datatable')

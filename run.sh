@@ -1,3 +1,2 @@
 #!/bin/bash
-streamlit run --browser.serverAddress $SERVER_NAME -- server.port $PORT main.py
-Create archive .gitignore
+streamlit run main.py --server.address $SERVER_NAME --server.port $PORT

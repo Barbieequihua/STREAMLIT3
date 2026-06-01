@@ -22,7 +22,7 @@ with st.container():
     fig, ax = plt.subplots()
     ax.hist(y, bins=20)
 
-    st.write(fig)
+    st.pyplot(plt)
 
 # Formateando máximos de una tabla
 
